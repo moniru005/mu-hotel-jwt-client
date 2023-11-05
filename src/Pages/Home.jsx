@@ -1,8 +1,11 @@
+import Banner from "../Components/Banner/Banner";
+import Navbar from "../Components/Header/Navbar";
 
 const Home = () => {
     return (
         <div>
-            <h2>Home Page</h2>
+            <Navbar></Navbar>
+            <Banner></Banner>
         </div>
     );
 };
