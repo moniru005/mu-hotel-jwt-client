@@ -9,6 +9,7 @@ export default {
     extend: {
       fontFamily: {
         'worSans': 'Work Sans, sans-serif',
+        'saint': 'Mrs Saint Delafield, cursive'
       }
     },
   },

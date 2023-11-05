@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import '../Header/Navbar.css'
+import './Navbar.css'
 
 const Navbar = () => {
     const navbar = (
@@ -30,7 +30,7 @@ const Navbar = () => {
     </>
 );
   return (
-    <div className="mx-auto font-worSans dark:bg-slate-800 dark:text-white z-10 relative">
+    <div className="mx-auto font-worSans dark:bg-slate-800 dark:text-white z-10 absolute w-full">
       <div className="lg:max-w-6xl navbar mx-auto dark:bg-slate-800 dark:text-white">
         <div className="navbar-start">
           <div className="dropdown">

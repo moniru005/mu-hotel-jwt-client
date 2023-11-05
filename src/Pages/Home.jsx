@@ -1,13 +1,14 @@
-import Banner from "../Components/Banner/Banner";
-import Navbar from "../Components/Header/Navbar";
+import About from "../Components/About/About";
+import Banner from "../Components/Header/Banner/Banner";
+import Offer from "../Components/Offer/Offer";
 
 const Home = () => {
-    return (
-        <div>
-            <Navbar></Navbar>
-            <Banner></Banner>
-        </div>
-    );
+  return (
+    <div>
+        <Banner></Banner>
+        <Offer></Offer>
+    </div>
+  );
 };
 
 export default Home;

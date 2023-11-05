@@ -1,13 +1,14 @@
-import image from "../../assets/images/10.jpg";
-import image2 from "../../assets/images/6.jpg";
+import image1 from "../../../assets/images/2.jpg";
+import image2 from "../../../assets/images/3.jpg";
+import image3 from "../../../assets/images/4.jpg";
 import { FaArrowRight } from "react-icons/fa";
 
 const Banner = () => {
   return (
-    <div className="carousel w-full h-[600px] absolute top-0 font-worSans">
+    <div className="carousel w-full h-[600px] top-0 font-worSans relative " >
       {/* Slider-1 */}
       <div id="slide1" className="carousel-item relative w-full">
-        <img src={image} className="w-full " />
+        <img src={image1} className="w-full " />
         <div className="absolute flex items-center h-full top-0 left-0 right-5 bottom-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00) 100%)] ">
           <div className="text-white space-y-7 w-full mx-auto text-center">
             <h2 className="text-5xl font-medium ">Welcome to <span className="font-bold uppercase">Murn Inn</span></h2>
@@ -58,7 +59,7 @@ const Banner = () => {
       </div>
       {/* Slider-3 */}
       <div id="slide3" className="carousel-item relative w-full">
-        <img src={image} className="w-full" />
+        <img src={image3} className="w-full" />
         <div className="absolute flex items-center h-full top-0 left-0 right-5 bottom-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00) 100%)] ">
           <div className="text-white space-y-7 w-full mx-auto text-center">
             <h2 className="text-5xl font-medium ">A Luxury Experience</h2>
