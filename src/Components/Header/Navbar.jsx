@@ -1,14 +1,31 @@
 import { NavLink } from "react-router-dom";
+import '../Header/Navbar.css'
 
 const Navbar = () => {
     const navbar = (
     <>
-      <div className="flex lg:flex-row md:flex-col flex-col gap-2 text-md font-semibold  ">
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/rooms">Rooms</NavLink></li>
-        <li><NavLink to="/cart">My Bookings</NavLink></li>
-        <li><NavLink to="/about">About</NavLink></li>
-        <li><NavLink to="/contact">Contact</NavLink></li>
+      <div className="nav flex lg:flex-row md:flex-col flex-col gap-2 text-md font-semibold  text-white ">
+        <li>
+            <NavLink to="/" style={({ isActive }) => ({background: isActive ? "#8c6c14" : "",})}>
+            Home
+            </NavLink>
+        </li>
+        <li>
+            <NavLink to="/rooms" style={({ isActive }) => ({background: isActive ? "#8c6c14" : "",})}>Rooms
+            </NavLink>
+        </li>
+        <li>
+            <NavLink to="/cart" style={({ isActive }) => ({background: isActive ? "#8c6c14" : "",})}>My Bookings
+            </NavLink>
+        </li>
+        <li>
+            <NavLink to="/about" style={({ isActive }) => ({background: isActive ? "#8c6c14" : "",})}>About
+            </NavLink>
+        </li>
+        <li>
+            <NavLink to="/contact" style={({ isActive }) => ({background: isActive ? "#8c6c14" : "",})}>Contact
+            </NavLink>
+        </li>
       </div>
     </>
 );
@@ -23,7 +40,7 @@ const Navbar = () => {
                 className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="currentColor"
+                stroke=""
               >
                 <path
                   strokeLinecap="round"
@@ -41,18 +58,18 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="flex flex-col items-center gap-1 dark:bg-white dark:text-black">
-            <img className="w-20" src="https://i.ibb.co/NL5W5zT/logo.png" alt=""/>
-            <p className="text-2xl font-extrabold font-worSans text-slate-800">
-              <h2 className="font-worSans text-[#1e4051]">Murn Inn</h2>
+            <img className="w-20" src="https://i.ibb.co/d0NNRmp/logo-1.png" alt=""/>
+            <p className="text-2xl font-medium font-worSans text-slate-800">
+              <h2 className="font-worSans text-[#FAFAFA]">Murn Inn</h2>
             </p>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex ">
-          <ul className="menu menu-horizontal px-1 ">{navbar}</ul>
+          <ul className="menu menu-horizontal px-1  ">{navbar}</ul>
         </div>
         <div className="navbar-end flex items-center gap-2">
           <div className="flex items-center gap-2">
-            <button className="btn">Login</button>
+            <button className="btn bg-[#f6db18]">Login</button>
 
             
           </div>

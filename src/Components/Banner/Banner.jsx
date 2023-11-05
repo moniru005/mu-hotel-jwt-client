@@ -1,22 +1,23 @@
-import image from "../../assets/images/2.jpg";
+import image from "../../assets/images/10.jpg";
+import image2 from "../../assets/images/6.jpg";
+import { FaArrowRight } from "react-icons/fa";
+
 const Banner = () => {
   return (
-    <div className="carousel w-full h-[600px] absolute top-0 parallax">
+    <div className="carousel w-full h-[600px] absolute top-0 font-worSans">
+      {/* Slider-1 */}
       <div id="slide1" className="carousel-item relative w-full">
         <img src={image} className="w-full " />
         <div className="absolute flex items-center h-full top-0 left-0 right-5 bottom-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00) 100%)] ">
-          <div className="text-white space-y-7 w-1/3 pl-5">
-            <h2 className="text-6xl ">Affordable Price For Car Servicing</h2>
-            <p>
-              There are many variations of passages of available, but the
-              majority have suffered alteration in some form
+          <div className="text-white space-y-7 w-full mx-auto text-center">
+            <h2 className="text-5xl font-medium ">Welcome to <span className="font-bold uppercase">Murn Inn</span></h2>
+            <p className="capitalize text-4xl  ">
+              Enjoy greatest pleasure in our hotel
             </p>
-            <div className="flex gap-5">
-              <button className="btn bg-orange-600 border-none text-white">
-                Discover More
-              </button>
-              <button className="btn bg-transparent text-white">
-                Latest Project
+
+            <div className="flex gap-5 justify-center">
+              <button className="btn bg-white text-black hover:bg-[#f1d516]">
+                our Facilities <FaArrowRight></FaArrowRight>
               </button>
             </div>
           </div>
@@ -30,21 +31,18 @@ const Banner = () => {
           </a>
         </div>
       </div>
+      {/* Slider-2 */}
       <div id="slide2" className="carousel-item relative w-full">
-        <img src={image} className="w-full" />
+        <img src={image2} className="w-full" />
         <div className="absolute flex items-center h-full top-0 left-0 right-5 bottom-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00) 100%)] ">
-          <div className="text-white space-y-7 w-1/3 pl-5">
-            <h2 className="text-6xl ">Affordable Price For Car Servicing</h2>
-            <p>
-              There are many variations of passages of available, but the
-              majority have suffered alteration in some form
+          <div className="text-white space-y-7 w-full mx-auto text-center">
+            <h2 className="text-5xl font-medium ">A Family Adventures</h2>
+            <p className="capitalize text-4xl">
+              Enjoy greatest pleasure in our hotel
             </p>
-            <div className="flex gap-5">
-              <button className="btn bg-orange-600 border-none text-white">
-                Discover More
-              </button>
-              <button className="btn bg-transparent text-white">
-                Latest Project
+            <div className="flex gap-5 justify-center">
+            <button className="btn bg-white text-black hover:bg-[#f1d516]">
+                our Facilities <FaArrowRight></FaArrowRight>
               </button>
             </div>
           </div>
@@ -58,21 +56,18 @@ const Banner = () => {
           </a>
         </div>
       </div>
+      {/* Slider-3 */}
       <div id="slide3" className="carousel-item relative w-full">
         <img src={image} className="w-full" />
         <div className="absolute flex items-center h-full top-0 left-0 right-5 bottom-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00) 100%)] ">
-          <div className="text-white space-y-7 w-1/3 pl-5">
-            <h2 className="text-6xl ">Affordable Price For Car Servicing</h2>
-            <p>
-              There are many variations of passages of available, but the
-              majority have suffered alteration in some form
+          <div className="text-white space-y-7 w-full mx-auto text-center">
+            <h2 className="text-5xl font-medium ">A Luxury Experience</h2>
+            <p className="capitalize text-4xl">
+              Enjoy greatest pleasure in our hotel
             </p>
-            <div className="flex gap-5">
-              <button className="btn bg-orange-600 border-none text-white">
-                Discover More
-              </button>
-              <button className="btn bg-transparent text-white">
-                Latest Project
+            <div className="flex gap-5 justify-center">
+            <button className="btn bg-white text-black hover:bg-[#f1d516]">
+                our Facilities <FaArrowRight></FaArrowRight>
               </button>
             </div>
           </div>
@@ -82,34 +77,6 @@ const Banner = () => {
             ❮
           </a>
           <a href="#slide4" className="btn btn-circle">
-            ❯
-          </a>
-        </div>
-      </div>
-      <div id="slide4" className="carousel-item relative w-full">
-        <img src={image} className="w-full" />
-        <div className="absolute flex items-center h-full top-0 left-0 right-5 bottom-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00) 100%)] ">
-          <div className="text-white space-y-7 w-1/3 pl-5">
-            <h2 className="text-6xl ">Affordable Price For Car Servicing</h2>
-            <p>
-              There are many variations of passages of available, but the
-              majority have suffered alteration in some form
-            </p>
-            <div className="flex gap-5">
-              <button className="btn bg-orange-600 border-none text-white">
-                Discover More
-              </button>
-              <button className="btn bg-transparent text-white">
-                Latest Project
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-          <a href="#slide3" className="btn btn-circle mr-5">
-            ❮
-          </a>
-          <a href="#slide1" className="btn btn-circle">
             ❯
           </a>
         </div>
