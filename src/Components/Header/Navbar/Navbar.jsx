@@ -1,64 +1,117 @@
-import { NavLink } from "react-router-dom";
-import './Navbar.css'
+import { Link, NavLink } from "react-router-dom";
+import "./Navbar.css";
+import useAuth from "../../../Hooks/useAuth";
+import { FaBars } from "react-icons/fa";
+import Swal from "sweetalert2";
 
 const Navbar = () => {
-    const navbar = (
+  const { user, userSignOut } = useAuth();
+
+  const handleLogOut = async() =>{
+
+   await Swal.fire({
+      title: "Are you sure?",
+      text: "You want to logout at this moment!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, I Want!"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        try{
+           userSignOut();
+           Swal.fire({
+            title: "Logged Out!",
+            text: "User has been Logged out.",
+            icon: "success"
+          });
+        }catch(err){
+          console.log(err);
+        }
+      }
+    });
+   
+
+  }
+  const navbar = (
     <>
       <div className="nav flex lg:flex-row md:flex-col flex-col gap-2 text-md font-semibold  text-white ">
         <li>
-            <NavLink to="/" style={({ isActive }) => ({background: isActive ? "#8c6c14" : "",})}>
+          <NavLink
+            to="/"
+            style={({ isActive }) => ({
+              background: isActive ? "#8c6c14" : "",
+            })}
+          >
             Home
-            </NavLink>
+          </NavLink>
         </li>
         <li>
-            <NavLink to="/rooms" style={({ isActive }) => ({background: isActive ? "#8c6c14" : "",})}>Rooms
-            </NavLink>
+          <NavLink
+            to="/rooms"
+            style={({ isActive }) => ({
+              background: isActive ? "#8c6c14" : "",
+            })}
+          >
+            Rooms
+          </NavLink>
         </li>
         <li>
-            <NavLink to="/cart" style={({ isActive }) => ({background: isActive ? "#8c6c14" : "",})}>My Bookings
-            </NavLink>
+          <NavLink
+            to="/cart"
+            style={({ isActive }) => ({
+              background: isActive ? "#8c6c14" : "",
+            })}
+          >
+            My Bookings
+          </NavLink>
         </li>
         <li>
-            <NavLink to="/about" style={({ isActive }) => ({background: isActive ? "#8c6c14" : "",})}>About
-            </NavLink>
+          <NavLink
+            to="/about"
+            style={({ isActive }) => ({
+              background: isActive ? "#8c6c14" : "",
+            })}
+          >
+            About
+          </NavLink>
         </li>
         <li>
-            <NavLink to="/contact" style={({ isActive }) => ({background: isActive ? "#8c6c14" : "",})}>Contact
-            </NavLink>
+          <NavLink
+            to="/contact"
+            style={({ isActive }) => ({
+              background: isActive ? "#8c6c14" : "",
+            })}
+          >
+            Contact
+          </NavLink>
         </li>
+        <li></li>
       </div>
     </>
-);
+  );
   return (
-    <div className="mx-auto font-worSans dark:bg-slate-800 dark:text-white z-10 absolute w-full">
+    <div className="mx-auto font-worSans dark:bg-slate-800 dark:text-white">
       <div className="lg:max-w-6xl navbar mx-auto dark:bg-slate-800 dark:text-white">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke=""
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
+              <FaBars className="text-white text-2xl"></FaBars>
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 "
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded w-52 "
             >
               {navbar}
             </ul>
           </div>
           <div className="flex flex-col items-center gap-1 dark:bg-white dark:text-black">
-            <img className="w-20" src="https://i.ibb.co/d0NNRmp/logo-1.png" alt=""/>
+            <img
+              className="w-20"
+              src="https://i.ibb.co/d0NNRmp/logo-1.png"
+              alt=""
+            />
             <p className="text-2xl font-medium font-worSans text-slate-800">
               <h2 className="font-worSans text-[#FAFAFA]">Murn Inn</h2>
             </p>
@@ -67,11 +120,40 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex ">
           <ul className="menu menu-horizontal px-1  ">{navbar}</ul>
         </div>
-        <div className="navbar-end flex items-center gap-2">
-          <div className="flex items-center gap-2">
-            <button className="btn bg-[#f6db18]">Login</button>
 
-            
+        <div className="navbar-end flex items-center gap-2 font-worSans">
+          <div className="flex items-center gap-2">
+
+            {/* <p className="lg:flex text-white hidden font-medium">{user?.displayName}</p> */}
+
+            {user?.email ? (
+              <div className="flex justify-center items-center">
+                <label tabIndex={0} className="lg:flex hidden   btn btn-ghost btn-circle avatar">
+                  <div className="w-10 rounded-full">
+                    <img src={user?.photoURL} />
+                  </div>
+                </label>
+                <button
+                  onClick={handleLogOut}
+                  className=" text-white font-medium hover:bg-yellow-700 p-2 rounded-lg font-workSans"
+                >
+                  Logout
+                </button>
+              </div>
+            ) : (
+              <Link to="/login">
+                <button className=" text-white font-medium hover:bg-yellow-700 p-2 rounded-lg font-workSans">
+                  Login
+                </button>
+              </Link>
+            )}
+          </div>
+          <div className="flex items-center gap-2">
+            <Link to="/login">
+              <button className="btn bg-yellow-600 hover:bg-yellow-700 text-white">
+                Booking
+              </button>
+            </Link>
           </div>
         </div>
       </div>

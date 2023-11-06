@@ -31,7 +31,7 @@ const RoomCards = () => {
               className="text-sm font-bold pt-12"
               style={{ letterSpacing: "2px" }}
             >
-              <Link to="" className="hover:text-yellow-600 flex justify-center items-center gap-1">
+              <Link to="/roomDetails" className="hover:text-yellow-600 flex justify-center items-center gap-1">
                 ROOM DETAILS <FaArrowRight></FaArrowRight>
               </Link>
             </h3>
@@ -63,7 +63,7 @@ const RoomCards = () => {
               className="text-sm font-bold pt-12"
               style={{ letterSpacing: "2px" }}
             >
-              <Link to="" className="hover:text-yellow-600 flex justify-center items-center gap-1">
+              <Link to="/roomDetails" className="hover:text-yellow-600 flex justify-center items-center gap-1">
                 ROOM DETAILS <FaArrowRight></FaArrowRight>
               </Link>
             </h3>
@@ -71,7 +71,7 @@ const RoomCards = () => {
         </div>
       </div>
 
-      {/* card-2 */}
+      {/* card-3 */}
       <div className="lg:w-96 w-full px-2 bg-base-100 shadow-xl image-full border-2 border-dotted border-white relative">
         <div>
           <img className="" src={image3} />
@@ -83,7 +83,7 @@ const RoomCards = () => {
             <h3 className="text-black">26th - 28th Dec 2023</h3>
           </div> */}
           <div className="text-center mt-6 space-y-4">
-            <h2 className="uppercase text-2xl font-bold">Deluxe Suite</h2>
+            <h2 className="uppercase text-2xl font-bold">Premier Room</h2>
             <p>
               Our signature dish is the classic Shabu & Grill Platter which
               comes with an assortment that are grilled to perfection over a
@@ -95,7 +95,7 @@ const RoomCards = () => {
               className="text-sm font-bold pt-12"
               style={{ letterSpacing: "2px" }}
             >
-              <Link to="" className="hover:text-yellow-600 flex justify-center items-center gap-1">
+              <Link to="/roomDetails" className="hover:text-yellow-600 flex justify-center items-center gap-1">
                 ROOM DETAILS <FaArrowRight></FaArrowRight>
               </Link>
             </h3>
