@@ -2,18 +2,18 @@ const Offer = () => {
   return (
     <>
    
-      <div className="py-10 lg:max-w-6xl mx-auto">
+      <div className="pt-20 lg:max-w-6xl mx-auto">
         <div className="text-center space-y-3 mb-10">
           <h2 className="font-worSans text-2xl text-yellow-600">
             Special Offer
           </h2>
-          <h1 className="uppercase text-5xl font-bold">offer</h1>
+          <h1 className="uppercase text-4xl font-bold">offer</h1>
         </div>
         <div>
           {/* cards */}
-          <div className="flex gap-4">
+          <div className="flex flex-col lg:flex-row gap-4 justify-center items-center">
             {/* card-1 */}
-            <div className="w-96 bg-base-100 shadow-xl image-full border-2 border-dotted border-white relative">
+            <div className="lg:w-96 w-full bg-base-100 shadow-xl image-full border-2 border-dotted relative">
               <img className="" src="https://i.ibb.co/mRSL6Mq/1.jpg" />
               <div className="absolute flex items-center h-full top-0 left-0 right-5 bottom-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00) 100%)] "></div>
 
@@ -40,7 +40,7 @@ const Offer = () => {
               </div>
             </div>
             {/* card-2 */}
-            <div className="w-96 bg-base-100 shadow-xl image-full border-2 border-dotted relative">
+            <div className="lg:w-96 w-full bg-base-100 shadow-xl image-full border-2 border-dotted relative">
               <img className="" src="https://i.ibb.co/zNzfQhr/2.jpg" />
               <div className="absolute flex items-center h-full top-0 left-0 right-5 bottom-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00) 100%)] "></div>
 
@@ -67,7 +67,7 @@ const Offer = () => {
               </div>
             </div>
             {/* card-3 */}
-            <div className="w-96 bg-base-100 shadow-xl image-full border-2 border-dotted relative">
+            <div className="lg:w-96  w-full bg-base-100 shadow-xl image-full border-2 border-dotted relative">
               <img className="" src="https://i.ibb.co/s2V9tYP/3.jpg" />
               <div className="absolute flex items-center h-full top-0 left-0 right-5 bottom-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00) 100%)] "></div>
 
