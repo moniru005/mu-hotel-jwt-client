@@ -5,31 +5,42 @@ import Navbar from "../Components/Header/Navbar/Navbar";
 import SocialLogin from "./SocialLogin";
 import useAuth from "../Hooks/useAuth";
 import Swal from "sweetalert2";
+import useAxios from "../Hooks/useAxios";
+// import axios from "axios";
 
 const Login = () => {
   const navigate = useNavigate();
   const { signIn } = useAuth();
   const [showPassword, setShowPassword] = useState(false);
+  const axios = useAxios();
 
   const handleSignIn = async (e) => {
     e.preventDefault();
     const form = e.target;
     const email = form.email.value;
     const password = form.password.value;
-    console.log(email, password);
+    // console.log(email, password);
 
     try {
-      await signIn(email, password);
+      const user = await signIn(email, password)
+      const res = await axios.post('/jwt', {email: user.user.email});
+      console.log(res);
       Swal.fire({
-        position: "top-center",
+        position: "center",
         icon: "success",
-        title: "Your work has been saved",
+        title: "User Successfully Logged in",
         showConfirmButton: false,
         timer: 1500
       });
-      navigate(location?.state? 'location.state' : '/');
+      
+      navigate(location?.state ? location.state : "/");
+      
     } catch (err) {
-      console.log(err);
+      Swal.fire({
+        title: "Wrong Email or Password",
+        text: err.message,
+        icon: "error"
+      });
     }
   };
 

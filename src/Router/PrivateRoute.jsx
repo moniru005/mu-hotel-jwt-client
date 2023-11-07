@@ -1,5 +1,6 @@
 import { Navigate, useLocation } from "react-router-dom";
 import useAuth from "../Hooks/useAuth";
+import Loading from "../Components/Loading/Loading";
 
 const PrivateRoute = ({children}) => {
     const {user, loading} = useAuth();
@@ -8,9 +9,7 @@ const PrivateRoute = ({children}) => {
 
     if(loading){
         return (
-                <div className="flex items-center justify-center my-10">
-                    <progress className="progress progress-success w-56"></progress>
-                </div>
+                <Loading></Loading>
             );
         
     }

@@ -1,6 +1,29 @@
+// import { useState } from "react";
 import RoomCards from "./RoomCards";
+import { useQuery } from "@tanstack/react-query";
+import useAxios from "../../Hooks/useAxios";
+import Loading from "../Loading/Loading";
+import { useState } from "react";
 
 const Rooms = () => {
+  // const [rooms, setRooms] = useState();
+  const axios = useAxios();
+  const [showAll, setShowAll] = useState(false);
+
+  const getRooms = async() =>{
+    const res = await axios.get('/rooms');
+    return res;
+  }
+
+  const {data: rooms, isLoading} = useQuery({
+    queryKey: ["room"],
+    queryFn: getRooms,
+  });
+
+  if(isLoading){
+    <Loading></Loading>
+  }
+
   return (
     <div className="pt-20 lg:max-w-6xl mx-auto">
       <div className="text-center space-y-3 mb-10">
@@ -9,8 +32,23 @@ const Rooms = () => {
       </div>
       <div>
         {/* cards */}
-        <div className="flex flex-col justify-center items-center lg:flex-row gap-4">
-          <RoomCards></RoomCards>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-10 gap-y-10">
+        {
+            showAll?
+            rooms?.data?.map(room => <RoomCards key={room._id} room={room}></RoomCards>)
+            :
+            rooms?.data?.slice(0, 6)?.map(room => <RoomCards key={room._id} room={room}></RoomCards>)
+        }
+        </div>
+        <div className="mt-10">
+          {
+            !showAll?
+            <button onClick={() => setShowAll(!showAll)} className="btn bg-yellow-600 text-white mx-auto flex">
+            Load more
+          </button>
+          :
+          ""
+          }
         </div>
       </div>
     </div>

@@ -1,0 +1,93 @@
+[
+    {
+      "roomType": "Standard Room",
+      "roomDescription": "A comfortable and budget-friendly choice for your stay, with basic amenities.",
+      "pricePerNight": 100,
+      "roomSize": "250",
+      "availability": {
+        "startDate": "2023-11-10",
+        "endDate": "2023-11-15"
+      },
+      "guest": 2,
+      "roomImages": [
+        "image1.jpg",
+        "image2.jpg"
+      ]
+    },
+    {
+      "roomType": "Deluxe Room",
+      "roomDescription": "Experience a touch of luxury in our spacious deluxe rooms with modern amenities.",
+      "pricePerNight": 200,
+      "roomSize": "350",
+      "availability": {
+        "startDate": "2023-11-12",
+        "endDate": "2023-11-18"
+      },
+      "guest": 3,
+      "roomImages": [
+        "image3.jpg",
+        "image4.jpg"
+      ]
+    },
+    {
+      "roomType": "Suite",
+      "roomDescription": "Indulge in a luxurious experience with a separate living area and beautiful views.",
+      "pricePerNight": 350,
+      "roomSize": "500",
+      "availability": {
+        "startDate": "2023-11-14",
+        "endDate": "2023-11-20"
+      },
+      "guest": 4,
+      "roomImages": [
+        "image5.jpg",
+        "image6.jpg"
+      ]
+    },
+    {
+      "roomType": "Family Room",
+      "roomDescription": "Perfect for families, this room offers a spacious and comfortable environment.",
+      "pricePerNight": 250,
+      "roomSize": "400",
+      "availability": {
+        "startDate": "2023-11-11",
+        "endDate": "2023-11-16"
+      },
+      "guest": 4,
+      "roomImages": [
+        "image7.jpg",
+        "image8.jpg"
+      ]
+    },
+    {
+      "roomType": "Executive Suite",
+      "roomDescription": "Ideal for business travelers, our executive suite offers a separate workspace and luxurious amenities.",
+      "pricePerNight": 400,
+      "roomSize": "600",
+      "availability": {
+        "startDate": "2023-11-09",
+        "endDate": "2023-11-14"
+      },
+      "guest": 2,
+      "roomImages": [
+        "image9.jpg",
+        "image10.jpg"
+      ]
+    },
+    {
+      "roomType": "Beachfront Villa",
+      "roomDescription": "Experience ultimate luxury in our beachfront villa with a private beach access and stunning ocean views.",
+      "pricePerNight": 600,
+      "roomSize": "800",
+      "availability": {
+        "startDate": "2023-11-13",
+        "endDate": "2023-11-19"
+      },
+      "guest": 6,
+      "roomImages": [
+        "image11.jpg",
+        "image12.jpg"
+      ]
+    }
+  ]
+  

@@ -6,6 +6,10 @@ import Login from "../Auth/Login";
 import Register from "../Auth/Register";
 import RoomsPage from "../Pages/RoomsPage";
 import RoomDetails from "../Components/Rooms/RoomDetails";
+import BookingPage from "../Pages/BookingPage";
+import AboutPage from "../Pages/AboutPage";
+import ContactPage from "../Pages/ContactPage";
+import PrivateRoute from "./PrivateRoute";
 
 const MainRoutes = createBrowserRouter([
     {
@@ -27,12 +31,25 @@ const MainRoutes = createBrowserRouter([
             },
             {
                 path: '/rooms',
-                element: <RoomsPage></RoomsPage>
+                element: <PrivateRoute><RoomsPage></RoomsPage></PrivateRoute>
             },
             {
                 path: '/roomDetails',
-                element: <RoomDetails></RoomDetails>
-            }
+                element: <PrivateRoute><RoomDetails></RoomDetails></PrivateRoute>
+            },
+            {
+                path: '/bookings',
+                element: <PrivateRoute><BookingPage></BookingPage></PrivateRoute>
+            },
+            {
+                path: '/about',
+                element: <AboutPage></AboutPage>
+            },
+            {
+                path: '/contact',
+                element: <ContactPage></ContactPage>
+            },
+
         ]
     }
 ])

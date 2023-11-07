@@ -7,33 +7,32 @@ import Swal from "sweetalert2";
 const Navbar = () => {
   const { user, userSignOut } = useAuth();
 
-  const handleLogOut = async() =>{
-
-   await Swal.fire({
+  const handleLogOut = async () => {
+    await Swal.fire({
       title: "Are you sure?",
       text: "You want to logout at this moment!",
       icon: "warning",
       showCancelButton: true,
       confirmButtonColor: "#3085d6",
       cancelButtonColor: "#d33",
-      confirmButtonText: "Yes, I Want!"
+      confirmButtonText: "Yes, I Want!",
     }).then((result) => {
       if (result.isConfirmed) {
-        try{
-           userSignOut();
-           Swal.fire({
-            title: "Logged Out!",
-            text: "User has been Logged out.",
-            icon: "success"
+        try {
+          userSignOut();
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "User Successfully Logged out",
+            showConfirmButton: false,
+            timer: 1500,
           });
-        }catch(err){
+        } catch (err) {
           console.log(err);
         }
       }
     });
-   
-
-  }
+  };
   const navbar = (
     <>
       <div className="nav flex lg:flex-row md:flex-col flex-col gap-2 text-md font-semibold  text-white ">
@@ -59,7 +58,7 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink
-            to="/cart"
+            to="/bookings"
             style={({ isActive }) => ({
               background: isActive ? "#8c6c14" : "",
             })}
@@ -123,12 +122,14 @@ const Navbar = () => {
 
         <div className="navbar-end flex items-center gap-2 font-worSans">
           <div className="flex items-center gap-2">
-
             {/* <p className="lg:flex text-white hidden font-medium">{user?.displayName}</p> */}
 
             {user?.email ? (
               <div className="flex justify-center items-center">
-                <label tabIndex={0} className="lg:flex hidden   btn btn-ghost btn-circle avatar">
+                <label
+                  tabIndex={0}
+                  className="lg:flex hidden   btn btn-ghost btn-circle avatar"
+                >
                   <div className="w-10 rounded-full">
                     <img src={user?.photoURL} />
                   </div>
