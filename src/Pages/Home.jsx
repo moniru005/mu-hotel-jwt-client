@@ -6,6 +6,7 @@ import Testimonial from "../Components/Testimonial/Testimonial";
 import Navbar from "../Components/Header/Navbar/Navbar";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import StandardRooms from "../Components/Rooms/StandardRooms";
 
 const Home = () => {
   AOS.init();
@@ -15,6 +16,10 @@ const Home = () => {
         <Navbar></Navbar>
       </div>
       <Banner></Banner>
+
+      <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="2000">
+        <StandardRooms></StandardRooms>
+      </div>
       <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="2000">
         <Rooms></Rooms>
       </div>

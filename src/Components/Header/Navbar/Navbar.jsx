@@ -150,7 +150,7 @@ const Navbar = () => {
             )}
           </div>
           <div className="flex items-center gap-2">
-            <Link to="/login">
+            <Link to="/bookings">
               <button className="btn bg-yellow-600 hover:bg-yellow-700 text-white">
                 Booking
               </button>

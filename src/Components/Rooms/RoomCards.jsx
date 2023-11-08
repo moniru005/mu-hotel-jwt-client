@@ -31,7 +31,7 @@ const RoomCards = ({room}) => {
               className="text-sm font-bold pt-12"
               style={{ letterSpacing: "2px" }}
             >
-              <Link to={`/roomDetails/${_id}`} className="hover:text-yellow-600 flex justify-center items-center gap-1">
+              <Link to={`/rooms/${_id}`} className="hover:text-yellow-600 flex justify-center items-center gap-1">
                 ROOM DETAILS <FaArrowRight></FaArrowRight>
               </Link>
             </h3>
