@@ -34,8 +34,10 @@ const MainRoutes = createBrowserRouter([
                 element: <PrivateRoute><RoomsPage></RoomsPage></PrivateRoute>
             },
             {
-                path: '/roomDetails',
-                element: <PrivateRoute><RoomDetails></RoomDetails></PrivateRoute>
+                path: '/roomDetails/:id',
+                element: <PrivateRoute><RoomDetails></RoomDetails></PrivateRoute>,
+                loader: () => fetch(`http://localhost:5000/rooms/`, {credentials: "include"})
+
             },
             {
                 path: '/bookings',

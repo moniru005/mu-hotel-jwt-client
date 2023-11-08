@@ -1,93 +1,155 @@
 [
-    {
-      "roomType": "Standard Room",
-      "roomDescription": "A comfortable and budget-friendly choice for your stay, with basic amenities.",
-      "pricePerNight": 100,
-      "roomSize": "250",
-      "availability": {
-        "startDate": "2023-11-10",
-        "endDate": "2023-11-15"
-      },
-      "guest": 2,
-      "roomImages": [
-        "image1.jpg",
-        "image2.jpg"
-      ]
+  {
+    "roomType": "Standard Room",
+    "roomDescription": "A comfortable and budget-friendly choice for your stay, with basic amenities.",
+    "roomOverview": "Our Standard Room is designed for those seeking comfort and convenience. The room provides a cozy retreat with modern amenities, including a comfortable bed, private bathroom, and a small seating area. It's the perfect choice for solo travelers or couples looking for a pleasant and affordable stay.",
+    "pricePerNight": 100,
+    "roomSize": "250 sq. ft",
+    "availability": {
+      "startDate": "2023-11-10",
+      "endDate": "2023-11-15"
     },
-    {
-      "roomType": "Deluxe Room",
-      "roomDescription": "Experience a touch of luxury in our spacious deluxe rooms with modern amenities.",
-      "pricePerNight": 200,
-      "roomSize": "350",
-      "availability": {
-        "startDate": "2023-11-12",
-        "endDate": "2023-11-18"
-      },
-      "guest": 3,
-      "roomImages": [
-        "image3.jpg",
-        "image4.jpg"
-      ]
+    "guest": 2,
+    "category": "Standard",
+    "roomImages": [
+      "https://i.ibb.co/wrmwXL3/2.jpg",
+      "https://i.ibb.co/wrmwXL3/2.jpg"
+    ]
+  },
+  {
+    "roomType": "Deluxe Room",
+    "roomDescription": "Experience a touch of luxury in our spacious deluxe rooms with modern amenities.",
+    "roomOverview": "Our Deluxe Room offers a touch of elegance and spaciousness, making it ideal for those who appreciate the finer things in life. With a king-sized bed, a stylish bathroom, and a separate sitting area, it's a perfect choice for travelers seeking extra comfort during their stay.",
+    "pricePerNight": 200,
+    "roomSize": "350 sq. ft",
+    "availability": {
+      "startDate": "2023-11-12",
+      "endDate": "2023-11-18"
     },
-    {
-      "roomType": "Suite",
-      "roomDescription": "Indulge in a luxurious experience with a separate living area and beautiful views.",
-      "pricePerNight": 350,
-      "roomSize": "500",
-      "availability": {
-        "startDate": "2023-11-14",
-        "endDate": "2023-11-20"
-      },
-      "guest": 4,
-      "roomImages": [
-        "image5.jpg",
-        "image6.jpg"
-      ]
+    "guest": 3,
+    "category": "Luxury",
+    "roomImages": [
+      "https://i.ibb.co/1zzBTcg/3.jpg",
+      "https://i.ibb.co/1zzBTcg/3.jpg"
+    ]
+  },
+  {
+    "roomType": "Suite",
+    "roomDescription": "Indulge in a luxurious experience with a separate living area and beautiful views.",
+    "roomOverview": "Our Suite is the epitome of luxury and comfort. With a separate living area, a spacious bedroom, and stunning views, it's the perfect choice for those who seek opulence during their stay. Whether for a romantic getaway or a special occasion, our Suite promises a memorable experience.",
+    "pricePerNight": 350,
+    "roomSize": "500 sq. ft",
+    "availability": {
+      "startDate": "2023-11-14",
+      "endDate": "2023-11-20"
     },
-    {
-      "roomType": "Family Room",
-      "roomDescription": "Perfect for families, this room offers a spacious and comfortable environment.",
-      "pricePerNight": 250,
-      "roomSize": "400",
-      "availability": {
-        "startDate": "2023-11-11",
-        "endDate": "2023-11-16"
-      },
-      "guest": 4,
-      "roomImages": [
-        "image7.jpg",
-        "image8.jpg"
-      ]
+    "guest": 4,
+    "category": "Luxury",
+    "roomImages": [
+      "https://i.ibb.co/GvSTxqS/4.jpg",
+      "https://i.ibb.co/GvSTxqS/4.jpg"
+    ]
+  },
+  {
+    "roomType": "Family Room",
+    "roomDescription": "Perfect for families, this room offers a spacious and comfortable environment.",
+    "roomOverview": "Our Family Room is thoughtfully designed to accommodate families, offering a spacious and comfortable environment for a memorable stay. With multiple beds and ample space, it's the ideal choice for families traveling together.",
+    "pricePerNight": 250,
+    "roomSize": "400 sq. ft",
+    "availability": {
+      "startDate": "2023-11-11",
+      "endDate": "2023-11-16"
     },
-    {
-      "roomType": "Executive Suite",
-      "roomDescription": "Ideal for business travelers, our executive suite offers a separate workspace and luxurious amenities.",
-      "pricePerNight": 400,
-      "roomSize": "600",
-      "availability": {
-        "startDate": "2023-11-09",
-        "endDate": "2023-11-14"
-      },
-      "guest": 2,
-      "roomImages": [
-        "image9.jpg",
-        "image10.jpg"
-      ]
+    "guest": 4,
+    "category": "Family",
+    "roomImages": [
+      "https://i.ibb.co/5v7tg8y/5.jpg",
+      "https://i.ibb.co/5v7tg8y/5.jpg"
+    ]
+  },
+  {
+    "roomType": "Executive Suite",
+    "roomDescription": "Ideal for business travelers, our executive suite offers a separate workspace and luxurious amenities.",
+    "roomOverview": "Our Executive Suite is tailored to meet the needs of business travelers. It features a separate workspace, luxurious amenities, and a comfortable bedroom. Whether you're here for work or leisure, our Executive Suite ensures productivity and relaxation.",
+    "pricePerNight": 400,
+    "roomSize": "600 sq. ft",
+    "availability": {
+      "startDate": "2023-11-09",
+      "endDate": "2023-11-14"
     },
-    {
-      "roomType": "Beachfront Villa",
-      "roomDescription": "Experience ultimate luxury in our beachfront villa with a private beach access and stunning ocean views.",
-      "pricePerNight": 600,
-      "roomSize": "800",
-      "availability": {
-        "startDate": "2023-11-13",
-        "endDate": "2023-11-19"
-      },
-      "guest": 6,
-      "roomImages": [
-        "image11.jpg",
-        "image12.jpg"
-      ]
-    }
-  ]
-  
+    "guest": 2,
+    "category": "Business",
+    "roomImages": [
+      "https://i.ibb.co/SwfYPtZ/6.jpg",
+      "https://i.ibb.co/SwfYPtZ/6.jpg"
+    ]
+  },
+  {
+    "roomType": "Beachfront Villa",
+    "roomDescription": "Experience ultimate luxury in our beachfront villa with a private beach access and stunning ocean views.",
+    "roomOverview": "Our Beachfront Villa is the pinnacle of luxury, offering a private beach access and breathtaking ocean views. With multiple bedrooms, a private pool, and a spacious living area, it's the perfect choice for those seeking an unforgettable escape by the sea.",
+    "pricePerNight": 600,
+    "roomSize": "800 sq. ft",
+    "availability": {
+      "startDate": "2023-11-13",
+      "endDate": "2023-11-19"
+    },
+    "guest": 6,
+    "category": "Luxury",
+    "roomImages": [
+      "https://i.ibb.co/f1vSGk3/cozy1.jpg",
+      "https://i.ibb.co/f1vSGk3/cozy1.jpg"
+    ]
+  },
+  {
+    "roomType": "Superior Room",
+    "roomDescription": "Enjoy a spacious and stylish room with modern amenities and beautiful city views.",
+    "roomOverview": "Our Superior Room provides ample space, stylish design, and stunning city views, making it an ideal choice for travelers who appreciate comfort and aesthetics. With a large bed, a well-appointed bathroom, and cityscape vistas, it promises a memorable urban stay.",
+    "pricePerNight": 150,
+    "roomSize": "300 sq. ft",
+    "availability": {
+      "startDate": "2023-11-10",
+      "endDate": "2023-11-16"
+    },
+    "guest": 2,
+    "category": "Standard",
+    "roomImages": [
+      "https://i.ibb.co/cyKFm5P/cozy2.jpg",
+      "https://i.ibb.co/cyKFm5P/cozy2.jpg"
+    ]
+  },
+  {
+    "roomType": "Penthouse Suite",
+    "roomDescription": "Experience the height of luxury with a penthouse suite featuring a private terrace and stunning skyline views.",
+    "roomOverview": "Our Penthouse Suite redefines luxury and sophistication, featuring a private terrace with breathtaking skyline views. With a spacious layout, multiple bedrooms, and exclusive amenities, it's the ultimate choice for those seeking an unparalleled experience.",
+    "pricePerNight": 800,
+    "roomSize": "1000 sq. ft",
+    "availability": {
+      "startDate": "2023-11-15",
+      "endDate": "2023-11-21"
+    },
+    "guest": 4,
+    "category": "Luxury",
+    "roomImages": [
+      "https://i.ibb.co/f9TMCSr/cozy3.jpg",
+      "https://i.ibb.co/f9TMCSr/cozy3.jpg"
+    ]
+  },
+  {
+    "roomType": "Garden View Room",
+    "roomDescription": "Relax in a serene garden view room with easy access to lush gardens and outdoor amenities.",
+    "roomOverview": "Our Garden View Room offers a peaceful retreat with easy access to lush gardens and outdoor amenities. The room is designed for nature lovers and those seeking a serene environment to unwind and reconnect with nature. It's a perfect choice for a relaxing stay.",
+    "pricePerNight": 120,
+    "roomSize": "275 sq. ft",
+    "availability": {
+      "startDate": "2023-11-12",
+      "endDate": "2023-11-18"
+    },
+    "guest": 2,
+    "category": "Nature",
+    "roomImages": [
+      "https://i.ibb.co/99bqP1f/cozy4.jp",
+      "https://i.ibb.co/99bqP1f/cozy4.jp"
+    ]
+  }
+]

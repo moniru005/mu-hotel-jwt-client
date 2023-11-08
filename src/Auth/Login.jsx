@@ -10,7 +10,7 @@ import useAxios from "../Hooks/useAxios";
 
 const Login = () => {
   const navigate = useNavigate();
-  const { signIn } = useAuth();
+  const { signIn, userSignOut } = useAuth();
   const [showPassword, setShowPassword] = useState(false);
   const axios = useAxios();
 
@@ -25,15 +25,19 @@ const Login = () => {
       const user = await signIn(email, password)
       const res = await axios.post('/jwt', {email: user.user.email});
       console.log(res);
-      Swal.fire({
-        position: "center",
-        icon: "success",
-        title: "User Successfully Logged in",
-        showConfirmButton: false,
-        timer: 1500
-      });
-      
-      navigate(location?.state ? location.state : "/");
+      if(res.data.success){
+        Swal.fire({
+          position: "center",
+          icon: "success",
+          title: "User Successfully Logged in",
+          showConfirmButton: false,
+          timer: 1500
+        });
+        navigate(location?.state ? location.state : "/");
+      }
+      else{
+        userSignOut();
+      }
       
     } catch (err) {
       Swal.fire({

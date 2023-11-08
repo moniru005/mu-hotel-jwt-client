@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 
 const RoomCards = ({room}) => {
-  console.log(room);
-  const {_id, roomImages, roomType, roomDescription, pricePerNight, roomSize} = room || {};
+  // console.log(room);
+  const {_id, roomImages, roomType, roomDescription, pricePerNight} = room || {};
   return (
     <>
       {/* card-1 */}
