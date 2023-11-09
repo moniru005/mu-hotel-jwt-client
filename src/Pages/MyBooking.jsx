@@ -29,7 +29,7 @@ const MyBooking = () => {
         confirmButtonText: "Yes, I Want!",
       }).then((result) => {
         if (result.isConfirmed) {
-            fetch(`http://localhost:5000/user/cancel-booking/${id}`, {
+            fetch(`https://hotel-jwt-server.vercel.app/user/cancel-booking/${id}`, {
                 method: "DELETE",
               })
                 .then((res) => res.json())
@@ -54,7 +54,7 @@ const MyBooking = () => {
   };
 
   const handleConfirm = (id) => {
-    fetch(`http://localhost:5000/user/bookings/${id}`, {
+    fetch(`https://hotel-jwt-server.vercel.app/user/bookings/${id}`, {
       method: "PATCH",
       headers: {
         "content-type": "application/json",
