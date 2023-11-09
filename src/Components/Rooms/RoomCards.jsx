@@ -10,22 +10,29 @@ const RoomCards = ({room}) => {
   return (
     <>
       {/* card-1 */}
+      
       <div className="lg:w-96 w-full px-2 bg-base-100 shadow-xl image-full border-2 border-dotted border-white ">
         <div className="relative">
-          <img className="h-72" src={roomImages[1]} />
+          <Link to={`/rooms/${_id}`}>
+            <img className="h-72" src={roomImages[1]} />
+          </Link>
           <div className=" absolute bottom-0 right-0 bg-black py-1.5 px-4 mb-0 mr-0 opacity-70">
-            <h3 style={{ letterSpacing: "2px" }} className="text-white text-lg font-medium">{'$ '+ pricePerNight +' / Night'}</h3>
+            <h3 style={{ letterSpacing: "2px" }} className="text-white text-lg font-medium">{'$ '+ pricePerNight +' / '} 
+            <span className="font-light">Night</span></h3>
           </div>
           {/* <div className="transform-cpu absolute flex items-center h-[380px] top-0 left-0 right-5 bottom-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00) 100%)] "></div> */}
         </div>
 
         <div className="card-body text-black font-worSans text-center">
           <div className="text-center mt-6 space-y-4">
-            <h2 className="uppercase text-2xl font-bold">{roomType}</h2>
+          <Link to={`/rooms/${_id}`}>
+            <h2 className="uppercase text-2xl font-bold hover:text-yellow-600">{roomType}</h2>
+          </Link>
             <p>
               {roomDescription}
             </p>
           </div>
+         
           <div>
             <h3
               className="text-sm font-bold pt-12"
@@ -38,6 +45,7 @@ const RoomCards = ({room}) => {
           </div>
         </div>
       </div>
+      
 
       
     </>

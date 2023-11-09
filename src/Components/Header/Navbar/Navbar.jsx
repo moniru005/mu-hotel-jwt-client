@@ -58,7 +58,7 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink
-            to="/bookings"
+            to="/my-booking"
             style={({ isActive }) => ({
               background: isActive ? "#8c6c14" : "",
             })}
@@ -100,7 +100,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded w-52 "
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded w-52"
             >
               {navbar}
             </ul>
@@ -150,7 +150,7 @@ const Navbar = () => {
             )}
           </div>
           <div className="flex items-center gap-2">
-            <Link to="/bookings">
+            <Link to="/rooms">
               <button className="btn bg-yellow-600 hover:bg-yellow-700 text-white">
                 Booking
               </button>

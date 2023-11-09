@@ -5,9 +5,11 @@ import { CgProfile } from "react-icons/cg";
 import { TbRulerMeasure } from "react-icons/tb";
 import { LiaBedSolid } from "react-icons/lia";
 import { GiCheckMark } from "react-icons/gi";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+
 const RoomDetailsCard = ({ rooms }) => {
-  console.log(rooms);
+ const {id} = useParams()
+ 
 
   return (
     <div className="max-w-6xl font-worSans">
@@ -38,7 +40,7 @@ const RoomDetailsCard = ({ rooms }) => {
           </p>
         </div>
         <div>
-          <Link to=''>
+          <Link to={`/bookings/${id}`}>
             <button className="py-2 px-6 text-lg font-medium bg-yellow-600 hover:bg-yellow-700 text-white ">
               Book Now
             </button>

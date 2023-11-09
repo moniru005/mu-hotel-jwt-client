@@ -6,8 +6,29 @@ const AboutPage = () => {
       <div className="shadow-lg bg-slate-500">
         <Navbar></Navbar>
       </div>
-      <div className="flex h-screen justify-center mt-20">
-        <h2 className="text-xl font-medium">About Page</h2>
+
+      <div className="about-section my-20 px-10 font-worSans">
+      <div className="text-center space-y-2 mb-24 font-worSans">
+          <h2 className="font-worSans text-2xl text-yellow-600">
+            We Are
+          </h2>
+          <h1 className="uppercase text-5xl font-bold" style={{ letterSpacing: "6px" }}>Seeside</h1>
+        </div>
+        <div className="flex ">
+          <div className="h-96 flex w-1/2 gap-2 relative">
+            <img  src="https://i.ibb.co/fMjZ0C6/a-1.jpg" alt="" />
+            <img className="relative top-0" src="https://i.ibb.co/pKJJDp7/a-2.jpg" alt="" />
+          </div>
+
+          <div className="w-1/2">
+            <h1 className="text-4xl font-bold py-4">The Luxury Experience You&apos;ll Remember</h1>
+            <hr className="border-2 w-12 my-4 border-yellow-600" />
+            <p>
+            Welcome to our Luxurious Hotel, your home away from home. We are a luxury hotel located in the heart of downtown Toronto, Canada. Our goal is to provide exceptional service and accommodations for our guests. At MURN-INN we pride ourselves on providing an unforgettable experience with luxurious amenities and personalized service that will make you feel right at home. From the moment you walk through our doors, you can expect a warm welcome and attentive staff dedicated to making your stay as comfortable and enjoyable as possible. 
+            </p>
+            <button>Choose Rooms</button>
+          </div>
+        </div>
       </div>
     </div>
   );
