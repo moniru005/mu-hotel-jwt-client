@@ -11,6 +11,7 @@ import AboutPage from "../Pages/AboutPage";
 import ContactPage from "../Pages/ContactPage";
 import PrivateRoute from "./PrivateRoute";
 import MyBooking from "../Pages/MyBooking";
+import Facilities from "../Components/Facilities/Facilities";
 // import RoomDetailsCard from "../Components/Rooms/RoomDetailsCard";
 
 const MainRoutes = createBrowserRouter([
@@ -66,6 +67,10 @@ const MainRoutes = createBrowserRouter([
             {
                 path: '/contact',
                 element: <ContactPage></ContactPage>
+            },
+            {
+                path: '/facilities',
+                element: <Facilities></Facilities>
             },
 
         ]

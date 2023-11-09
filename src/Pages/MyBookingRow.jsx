@@ -44,7 +44,7 @@ const MyBookingRow = ({booking, handleDelete, handleConfirm}) => {
       <th>
         {
           status === 'confirm' ? 
-          <span className="font-bold  text-primary">Confirmed</span> 
+          <span className="font-bold text-primary">Confirmed</span> 
           :
           <button onClick={() => handleConfirm(_id)}  className="btn btn-ghost btn-sm">Please Confirm</button>
         }

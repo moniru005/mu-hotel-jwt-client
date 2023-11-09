@@ -1,9 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import image1 from "../../../assets/images/2.jpg";
 import image2 from "../../../assets/images/3.jpg";
 import image3 from "../../../assets/images/4.jpg";
 import { FaArrowRight } from "react-icons/fa";
 
 const Banner = () => {
+
+  const goTo = useNavigate();
   return (
     <div className="carousel w-full h-[600px] top-0 font-worSans relative " >
       {/* Slider-1 */}
@@ -17,7 +20,7 @@ const Banner = () => {
             </p>
 
             <div className="flex gap-5 justify-center">
-              <button className="btn bg-white text-black hover:bg-[#f1d516]">
+              <button onClick={() => goTo('/facilities')} className="btn bg-white text-black hover:bg-[#f1d516]">
                 our Facilities <FaArrowRight></FaArrowRight>
               </button>
             </div>
