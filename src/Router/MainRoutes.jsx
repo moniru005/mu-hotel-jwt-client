@@ -42,8 +42,6 @@ const MainRoutes = createBrowserRouter([
             {
                 path: '/rooms/:id',
                 element: <PrivateRoute><RoomDetails></RoomDetails></PrivateRoute>
-                
-
             },
             {
                 path: '/bookings',

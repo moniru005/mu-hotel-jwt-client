@@ -49,7 +49,8 @@ const Rooms = () => {
           ROOMS
         </h1>
       </div>
-      <div className="flex justify-between items-center mt-10 font-worSans border-yellow-600 border-2 p-4 border-opacity-10">
+
+      <div className="flex flex-col lg:flex-row gap-y-6  justify-between items-center mt-10 font-worSans border-yellow-600 border-2 p-4 border-opacity-10">
         <div className="text-black text-lg">
           Here the total {rooms?.data.length} Rooms you choose from
         </div>
@@ -64,6 +65,7 @@ const Rooms = () => {
               <option value="desc">High to Low</option>
             </select>
           </div>
+
           <div>
             <select className="" onChange={(e) => setCategory(e.target.value)}>
               <option disabled selected>
@@ -76,6 +78,7 @@ const Rooms = () => {
               ))}
             </select>
           </div>
+
         </div>
       </div>
       <div>

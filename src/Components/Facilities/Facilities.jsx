@@ -3,18 +3,18 @@ import { MdOutlineRestaurant } from "react-icons/md";
 
 const Facilities = () => {
   return (
-    <div className="relative ">
-      <div className=" absolute w-full z-50">
+    <div className="lg:relative ">
+      <div className=" lg:absolute lg:w-full lg:z-50 bg-slate-400 lg:bg-transparent">
         <Navbar></Navbar>
       </div>
-      <div className="flex flex-col justify-center">
-        <div className="">
+      <div className="lg:flex flex-col justify-center">
+        <div className="hidden lg:flex">
           <img className="" src="https://i.ibb.co/wrmwXL3/2.jpg" alt="" />
           <div className="absolute flex items-center h-full top-0 left-0 right-5 bottom-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)100%)] z-0 "></div>
         </div>
 
         {/* Facilities */}
-        <div className="my-14  absolute top-[8%] text-white ">
+        <div className="my-14  lg:absolute lg:top-[8%] lg:text-white ">
           <div className="text-center  space-y-2  font-worSans  ">
             <h2 className="font-worSans  text-2xl text-yellow-600">
               Our Luxurious Hotel
