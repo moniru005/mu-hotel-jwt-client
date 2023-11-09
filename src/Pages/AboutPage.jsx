@@ -2,12 +2,15 @@ import Navbar from "../Components/Header/Navbar/Navbar";
 
 const AboutPage = () => {
   return (
-    <div>
-      <div className="shadow-lg bg-slate-500">
+    <div className="relative">
+      <div className="absolute w-full z-50">
         <Navbar></Navbar>
       </div>
-
-      <div className="about-section my-20 px-10 font-worSans">
+      <div className="">
+          <img className="" src="https://i.ibb.co/wrmwXL3/2.jpg" alt="" />
+          <div className="absolute flex items-center h-full top-0 left-0 right-5 bottom-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)100%)] z-0 "></div>
+        </div>
+      <div className="about-section my-20 px-10 font-worSans absolute top-20 text-white">
       <div className="text-center space-y-2 mb-24 font-worSans">
           <h2 className="font-worSans text-2xl text-yellow-600">
             We Are

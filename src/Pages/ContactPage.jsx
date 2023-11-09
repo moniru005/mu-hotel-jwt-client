@@ -6,7 +6,8 @@ const ContactPage = () => {
       <div className="shadow-lg bg-slate-500">
         <Navbar></Navbar>
       </div>
-      <div className="text-center space-y-2 my-20 font-worSans">
+      
+      <div className="text-center space-y-2 my-12 font-worSans">
           <h2 className="font-worSans text-2xl text-yellow-600">
             We Are
           </h2>
@@ -21,7 +22,7 @@ const ContactPage = () => {
               Contact
             </p>
             <h3 className="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight">
-              Get In <span className="text-yellow-400">Touch</span>
+              Get In <span className="text-yellow-600">Touch</span>
             </h3>
             <p className="mt-4  text-gray-200 text-left">
             Thank you for reaching out! We would love to hear from you. Please feel free to contact us with any questions or comments you may have, and we will get back to you as soon as possible. You can reach us via email at info@murnhotel.com or by phone at (123) 456-7890. Thank you again for your interest in our company, and we look forward to hearing from you!
@@ -91,15 +92,9 @@ const ContactPage = () => {
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                 ></textarea>
               </div>
-              <div className="flex justify-between w-full px-3">
-                <div className="md:flex md:items-center">
-                  <label className="block text-gray-500 font-bold">
-                    <input className="mr-2 leading-tight" type="checkbox" />
-                    
-                  </label>
-                </div>
+              <div className="w-full px-3">
                 <button
-                  className="shadow bg-indigo-600 hover:bg-indigo-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded"
+                  className="shadow bg-yellow-600 hover:bg-indigo-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded"
                   type="submit"
                 >
                   Send Message
