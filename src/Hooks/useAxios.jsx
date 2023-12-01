@@ -2,7 +2,7 @@ import axios from "axios";
 import useAuth from "./useAuth";
 
 const instance = axios.create({
-  baseURL: "https://hotel-jwt-server.vercel.app",
+  baseURL: "http://localhost:5000",
   withCredentials: true,
 });
 

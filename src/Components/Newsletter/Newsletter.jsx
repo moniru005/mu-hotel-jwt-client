@@ -3,7 +3,7 @@ import useAxios from "../../Hooks/useAxios";
 import Swal from "sweetalert2";
 
 const Newsletter = () => {
-  const [email, setEmail] = useState();
+  const [email, setEmail] = useState(); //for newsletter email state
   const axios = useAxios()
 
   const handleSubscribe = async (e) => {
@@ -27,6 +27,7 @@ const Newsletter = () => {
       console.log(err);
     }
   };
+
   return (
     <div className="bg-black lg:max-w-6xl mx-auto font-worSans mt-20  rounded">
       <div className="flex flex-col lg:flex-row gap-4 items-center px-4 py-12 ">
@@ -48,7 +49,7 @@ const Newsletter = () => {
                     onBlur={(e) => setEmail(e.target.value)}
                     name="email"
                     className="input input-bordered join-item"
-                    placeholder="Email"
+                    placeholder="Email" required
                   />
                   <input type="submit" value="Subscribe" className="btn join-item capitalize" />
                 </form>

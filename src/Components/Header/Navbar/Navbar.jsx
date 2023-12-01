@@ -40,7 +40,8 @@ const Navbar = () => {
           <NavLink
             to="/"
             style={({ isActive }) => ({
-              background: isActive ? "#8c6c14" : "",
+              background: isActive ? "rgb(202 138 4 / 100%)" : "",
+              color: isActive? "black" : "",
             })}
           >
             Home
@@ -50,7 +51,8 @@ const Navbar = () => {
           <NavLink
             to="/rooms"
             style={({ isActive }) => ({
-              background: isActive ? "#8c6c14" : "",
+              background: isActive ? "rgb(202 138 4 / 100%)" : "",
+              color: isActive? "black" : "",  
             })}
           >
             Rooms
@@ -60,7 +62,8 @@ const Navbar = () => {
           <NavLink
             to="/my-booking"
             style={({ isActive }) => ({
-              background: isActive ? "#8c6c14" : "",
+              background: isActive ? "rgb(202 138 4 / 100%)" : "",
+              color: isActive? "black" : "",
             })}
           >
             My Bookings
@@ -70,7 +73,8 @@ const Navbar = () => {
           <NavLink
             to="/about"
             style={({ isActive }) => ({
-              background: isActive ? "#8c6c14" : "",
+              background: isActive ? "rgb(202 138 4 / 100%)" : "",
+              color: isActive? "black" : "",
             })}
           >
             About
@@ -80,7 +84,8 @@ const Navbar = () => {
           <NavLink
             to="/contact"
             style={({ isActive }) => ({
-              background: isActive ? "#8c6c14" : "",
+              background: isActive ? "rgb(202 138 4 / 100%)" : "",
+              color: isActive? "black" : "",
             })}
           >
             Contact

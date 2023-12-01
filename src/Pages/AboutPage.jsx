@@ -18,9 +18,9 @@ const AboutPage = () => {
           <h1 className="uppercase text-black lg:text-white text-5xl font-bold" style={{ letterSpacing: "6px" }}>Seeside</h1>
         </div>
         <div className="flex flex-col lg:flex-row">
-          <div className="h-96 flex w-1/2 gap-2 relative">
+          <div className="h-96 flex w-1/2 gap-2 ">
             <img  src="https://i.ibb.co/fMjZ0C6/a-1.jpg" alt="" />
-            <img className="relative top-0" src="https://i.ibb.co/pKJJDp7/a-2.jpg" alt="" />
+            <img src="https://i.ibb.co/pKJJDp7/a-2.jpg" alt="" />
           </div>
 
           <div className="lg:w-1/2 w-full">

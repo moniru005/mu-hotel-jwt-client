@@ -5,7 +5,7 @@ const useRooms = () => {
   const [rooms, setRooms] = useState([]);
 
   useEffect(() => {
-    fetch('https://hotel-jwt-server.vercel.app/rooms', {credentials:"include"})
+    fetch('http://localhost:5000/rooms', {credentials:"include"})
     .then(res => res.json())
     .then(data =>setRooms(data))
     
