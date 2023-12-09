@@ -2,18 +2,23 @@
 # Project Name: Hotel Booking Web Application
 
 
-
 ## Project Code and Live Link
-
-#### *assignment_category_0004*
 
 
 Live Link: https://hotel-jwt-client.web.app/
 
-Client Link: https://github.com/Porgramming-Hero-web-course/b8a11-client-side-moniru005
+Client Link: https://github.com/moniru005/mu-hotel-jwt-client 
 
-Server Link: https://github.com/Porgramming-Hero-web-course/b8a11-server-side-moniru005
+Server Link: https://github.com/moniru005/mu-hotel-jwt-server
 
+
+
+## Features
+
+- Light/dark mode toggle
+- Live previews
+- Fullscreen mode
+- Cross platform
 
 ## Features
 
@@ -37,3 +42,54 @@ Certainly, let's add a point about securing user data with JSON Web Tokens (JWT)
 
  
 *Remember, the success of your hotel booking web application depends not only on the features but also on how well they come together to create a seamless and enjoyable experience for your users.*
+## Tech Stack
+
+**Client:** React, React Router, TailwindCSS, DaisyUI, 
+
+**Server:** Node, Express, MongoDB, Dotenv
+
+
+## Installation
+
+
+Install my Project with NPM & React Router DOM
+```bash
+    npm create vite@latest my-project -- --template react
+    cd my-project
+    npm install react-router-dom localforage match-sorter sort-by
+````
+Install Tailwind CSS with Vite
+```bash
+    npm install -D tailwindcss postcss autoprefixer
+    npx tailwindcss init -p
+```
+Install PropTypes for prop validation
+```bash
+    npm install --save prop-types
+```
+Install sweetalert2 for showing beautiful messages
+```bash
+    npm install sweetalert2
+```
+Install AOS Animation
+```bash
+    npm install aos --save
+```
+
+## Importing on this project
+
+Import for PropTypes validtion
+```bash
+    import PropTypes from 'prop-types'; // ES6
+```
+Import for Icons in sweetalert2
+```bash
+    import Swal from 'sweetalert2'
+```
+Import for AOS Animation
+```bash
+    import AOS from 'aos';
+    import 'aos/dist/aos.css'; // You can also use <link> for styles
+    // ..
+    AOS.init();
+```
