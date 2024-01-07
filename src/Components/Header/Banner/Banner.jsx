@@ -45,7 +45,7 @@ const Banner = () => {
               Enjoy greatest pleasure in our hotel
             </p>
             <div className="flex gap-5 justify-center">
-            <button className="btn bg-white text-black hover:bg-[#f1d516]">
+              <button onClick={() => goTo('/facilities')} className="btn bg-white text-black hover:bg-[#f1d516]">
                 our Facilities <FaArrowRight></FaArrowRight>
               </button>
             </div>
@@ -70,7 +70,7 @@ const Banner = () => {
               Enjoy greatest pleasure in our hotel
             </p>
             <div className="flex gap-5 justify-center">
-            <button className="btn bg-white text-black hover:bg-[#f1d516]">
+              <button onClick={() => goTo('/facilities')} className="btn bg-white text-black hover:bg-[#f1d516]">
                 our Facilities <FaArrowRight></FaArrowRight>
               </button>
             </div>
