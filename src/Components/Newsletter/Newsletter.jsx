@@ -29,7 +29,7 @@ const Newsletter = () => {
   };
 
   return (
-    <div className="bg-black lg:max-w-6xl mx-auto font-worSans mt-20  rounded">
+    <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="2000" className="bg-black lg:max-w-6xl mx-auto font-worSans mt-20  rounded">
       <div className="flex flex-col lg:flex-row gap-4 items-center px-4 py-12 ">
         <div className="w-1/2 text-center space-y-3">
           <h2 className="text-white text-3xl">Sign up for our newsletter</h2>

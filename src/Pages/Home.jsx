@@ -4,36 +4,25 @@ import Offer from "../Components/Offer/Offer";
 import Rooms from "../Components/Rooms/Rooms";
 import Testimonial from "../Components/Testimonial/Testimonial";
 import Navbar from "../Components/Header/Navbar/Navbar";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
 import StandardRooms from "../Components/Rooms/StandardRooms";
+import CallToAction from "../Components/CallToAction/CallToAction";
+import DiningAndBar from "../Components/DiningAndBar/DiningAndBar";
 
 const Home = () => {
-  AOS.init();
   return (
     <div>
       <div className="absolute z-10 w-full">
         <Navbar></Navbar>
       </div>
       <Banner></Banner>
-
-      <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="2000">
-        <StandardRooms></StandardRooms>
-      </div>
-      <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="2000">
-        <Rooms></Rooms>
-      </div>
-      <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="2000">
-        <Offer></Offer>
-      </div>
-
-      <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="2000">
-        <Newsletter></Newsletter>
-      </div>
-
-      <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="2000">
-        <Testimonial></Testimonial>
-      </div>
+      <Offer></Offer>
+      <StandardRooms></StandardRooms>
+      <Rooms></Rooms>
+      <DiningAndBar></DiningAndBar>
+      <Newsletter></Newsletter>
+      <Testimonial></Testimonial>
+      <CallToAction></CallToAction>
     </div>
   );
 };

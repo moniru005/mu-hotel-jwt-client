@@ -2,7 +2,7 @@ const Offer = () => {
   return (
     <>
    
-      <div className="pt-20 lg:max-w-6xl mx-auto">
+      <div data-aos="fade-up" data-aos-offset="200" data-aos-duration="2000" className="pt-20 lg:max-w-6xl mx-auto">
         <div className="text-center space-y-3 mb-10">
           <h2 className="font-worSans text-2xl text-yellow-600">
             Special Offer

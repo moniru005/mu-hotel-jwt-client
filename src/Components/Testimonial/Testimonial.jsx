@@ -17,25 +17,23 @@ const Testimonial = () => {
 
   return (
     <>
-      <section className="pb-20 pt-20 dark:bg-dark">
+      <section data-aos="fade-up" data-aos-offset="200" data-aos-duration="2000" className="pb-20 pt-20 dark:bg-dark">
       <div className="text-center space-y-3 mb-10">
           <h1 className="uppercase text-5xl font-bold">Testimonials</h1>
         </div>
         <div className="container mx-auto">
           <Swiper slidesPerView={1} ref={sliderRef}>
-            <SwiperSlide>
+            <SwiperSlide className="px-4">
               <SingleTestimonial
                 image="https://i.ibb.co/g4GFSGd/t-4.jpg"
-                
                 details="I recently had the pleasure of reserving a room at your hotel, and I was extremely pleased with my experience. The staff were friendly and helpful, the amenities were top-notch, and the overall atmosphere was very pleasant. I would definitely recommend this hotel to my friends and family for future stays!"
                 name="Larry Diamond"
                 position="Chief Executive Officer of Havard Engineering"
               />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className="px-4">
               <SingleTestimonial
                 image="https://i.ibb.co/6n206t7/t-1.png"
-                
                 details="My family and I had a wonderful stay at your hotel! The staff was friendly, the rooms were clean and comfortable, and the location was convenient. We especially enjoyed the delicious breakfast buffet each morning. Our entire experience with you was top notch. Thanks for making our vacation so enjoyable!"
                 name="Elizabeth Laura"
                 position="Deputy Director of Bushra Concord."
